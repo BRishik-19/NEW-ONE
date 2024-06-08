@@ -18,6 +18,8 @@ st.subheader("This is my new app")
 st.write("A simple app adding,editing,completing todos items...")
 todos= Functions.get_todos("todos_items.txt")
 
+
+st.set_page_config(layout="wide")
 for ind,i in enumerate(todos):
     checkbox=st.checkbox(i,key=i)
     if checkbox:
